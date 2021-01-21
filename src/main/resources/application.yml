@@ -1,0 +1,5 @@
+spring:  application:    name: Backyard Rulz  jpa:    show-sql: true  h2:    console:      enabled: true  output:    ansi:      enabled: always  banner:    location: /static/backyard_banner.txt  profiles:    active:    - dev    server:  servlet:    context-path: /backyard
+  port: 8081
+management:  endpoints:    web:      exposure:        include: "*"
+
+
