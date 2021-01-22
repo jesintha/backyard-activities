@@ -1,5 +1,7 @@
-spring:  application:    name: Backyard Rulz  jpa:    show-sql: true  h2:    console:      enabled: true  output:    ansi:      enabled: always  banner:    location: /static/backyard_banner.txt  profiles:    active:    - dev    server:  servlet:    context-path: /backyard
-  port: 8081
-management:  endpoints:    web:      exposure:        include: "*"
-
-
+backyard:
+  city: Richardson
+spring:  application:    name: backyard-activities 
+eureka:
+  client:
+    service-url:
+       default-zone : http://localhost:8761/eureka

@@ -1,0 +1,5 @@
+spring:  application:    name: backyard-activities  jpa:    show-sql: true  h2:    console:      enabled: true  output:    ansi:      enabled: always  banner:    location: /static/backyard_banner.txt  profiles:    active:    - dev  cloud:    bootstrap:      enabled: true    config:      enabled: true       uri: http://localhost:8888   server:  servlet:    context-path: /backyard
+  port: 8081  
+management:  endpoints:    web:      exposure:        include: "*"
+
+
